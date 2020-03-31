@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Welcome to JS</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Exo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+
+    <section id="authentication">
+      <form id="auth-form" action="/" onsubmit="submitHandler()">
+        <h1>User Login</h1>
+        <div class="form-group">
+          <label for="username">Username</label><br />
+          <input type="text" name="username" id="username" onkeyup="usernameHandler()"/><br />
+          <div id="username-msg" style="color: white;"></div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label><br />
+          <input type="password" name="password" id="password" onkeyup="passwordHandler()"/><br />
+          <div id="password-msg" style="color: white;"></div>
+        </div>
+        <input type="submit" value="Submit" id="submitBtn" />
+      </form>
+    </section>
+
+    
+    <script src="./script.js"></script>
+  </body>
+</html>
